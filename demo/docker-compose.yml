@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: DockerfileWebApi
+    # environment:
+    
+    tty: true
+    ports:
+      - "8000:80"
+
+#mount

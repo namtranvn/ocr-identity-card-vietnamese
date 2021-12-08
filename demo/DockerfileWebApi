@@ -1,0 +1,7 @@
+FROM python:3.9.7-buster
+
+COPY app/requirements/common.txt /common.txt
+# RUN apt install libgtk2.0-dev pkg-config
+RUN pip install -r /common.txt
+
+COPY ./app /app
